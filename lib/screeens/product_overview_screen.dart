@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_learn/providers/cart.dart';
 import 'package:provider_learn/screeens/cart_screen.dart';
+import 'package:provider_learn/widgets/app_drawer.dart';
 import 'package:provider_learn/widgets/badge.dart';
 import 'package:provider_learn/widgets/grid_view_widget.dart';
 
@@ -56,6 +57,7 @@ class _ProductsOverviewScreenState extends State<ProductsOverviewScreen> {
           ),
         ],
       ),
+      drawer: AppDrawer(),
       body: GridviewWidget(
         showFav: _showOnlyFav,
       ),
